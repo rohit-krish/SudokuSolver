@@ -1,0 +1,17 @@
+<MyLayout>
+    rows:2
+    StackLayout:
+        # size_hint: 1, .7
+        id: layout_id
+        orientation : 'lr-tb'
+        padding :  ('10dp',0,'5dp',0)
+    GridLayout:
+        size_hint: 1 , .11
+        cols: 2
+        padding: 5
+        Button:
+            text: 'Solve'
+            on_press: root.solveIt()
+        Button:
+            text: 'Clear'
+            on_press: root.clearButton()
